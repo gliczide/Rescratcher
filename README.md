@@ -5,11 +5,6 @@
 ### Version: 0.8.3
 ### Default Font Size: 16 only!
 
-#### Description: 
-A CSS Recreation on 2.0 style [aka make 3.0 pages look like 2.0]
-
-All works made with Stylus.
-
 [Installation:]
 
 https://github.com/infinitytec/I-Cant-Believe-Its-Not-2
