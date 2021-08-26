@@ -2,8 +2,8 @@
 
 ---
 
-### Version: 0.8.1
-### Default Font Size: 16 Only!
+### Version: 0.8.3
+### Default Font Size: 16 only!
 
 #### Description: 
 A CSS Recreation on 2.0 style [aka make 3.0 pages look like 2.0]
