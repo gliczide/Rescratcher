@@ -1261,7 +1261,7 @@ li.highlighted {
     content: "";
     padding-left: 20px;
     background-position: -15px -403px;
-    margin-left: -20px;
+    margin-left: -19px;
     margin-right: 3px; }
 .studio-info .studio-info-footer-stats div:first-child {
     position: absolute;
@@ -1639,7 +1639,7 @@ button.white {
     left: 2px; }
 a[href="/accounts/password_reset/"]:hover {
     background-color: transparent !important; } }
-.splash, .outer, .messages {
+.title-banner.intro-banner, .outer, .messages {
     margin-top: -14px; }
 .title-banner.mod-messages {
     background-color: #25AFF4; }
