@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Scratch 2.1
 @namespace      scratch.mit.edu
-@version        0.9.2
+@version        0.9.3
 @description    Reverts 3.0 pages into 2.0!
 @author         gliczide
 @preprocessor   stylus
@@ -1120,7 +1120,7 @@ button.button.action-button.copy-link-button {
     left: 8.57rem;
     top: -1.8rem;
     position: relative;
-    border-radius: 4px;}
+    border-radius: 4px; }
 .thumbnail.gallery .thumbnail-image img, .thumbnail-column .thumbnail.gallery .thumbnail-image {
     width: 170px !important;
     height: 98px !important; }
@@ -1251,11 +1251,12 @@ li.highlighted {
     left: 51.6rem;
     overflow: hidden;
     line-height: 21px !important;
-    width: 90px !important;
+    width: min-content;
     padding-left: 25px;
     font-size: 14px;
     font-weight: unset;
-    z-index: 1; }
+    z-index: 1;
+    padding-right: 8px; }
 .button.studio-follow-button::before {
     background-image: url(https://cdn.scratch.mit.edu/scratchr2/static/__9c5e4a8de50f4ce487e67140f57c59fc__/images/icons_sm.png);
     content: "";
