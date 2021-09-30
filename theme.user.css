@@ -1697,6 +1697,8 @@ a[href="/accounts/password_reset/"]:hover {
     background-color: transparent !important; } }
 .title-banner.intro-banner, .outer, .download {
     margin-top: -14px; }
+.band {
+    margin-bottom: -19px; }
 .title-banner.mod-messages {
     background-color: #25AFF4; }
 #pagewrapper #content a[href="/accounts/password_reset/"] {
