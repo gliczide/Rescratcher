@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Scratch 2.1
 @namespace      https://github.com/gliczide/Scratch-2.1/
-@supportURL     https://github.com/gliczide/Scratch-2.1/issues
+@supportURL     https://github.com/gliczide/Scratch-2.1/pulls
 @updateURL      https://github.com/gliczide/Scratch-2.1/theme.user.css
 @version        0.9.4
 @license        Apache License 2.0
@@ -145,8 +145,6 @@ li.highlighted, li.reply {
     font-weight: bold !important; }
 #app #main-content {
     padding-top: 10px; }
-.action-bar.scroll {
-    margin-top: -20px; }
 #comments #comments-enabled-box {
     margin-top: 0; }
 /* fixing I-Cant-Believe-Its-Not-2 Userscript */
