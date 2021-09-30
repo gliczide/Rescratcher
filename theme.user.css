@@ -1695,7 +1695,7 @@ button.white {
     left: 2px; }
 a[href="/accounts/password_reset/"]:hover {
     background-color: transparent !important; } }
-.title-banner.intro-banner, .outer {
+.title-banner.intro-banner, .outer, .download {
     margin-top: -14px; }
 .title-banner.mod-messages {
     background-color: #25AFF4; }
