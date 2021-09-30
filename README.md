@@ -2,7 +2,7 @@
 
 ---
 
-### Version: 0.8.3
+### Version: 0.9.3
 ### Default Font Size: 16 only!
 
 [Installation:]
