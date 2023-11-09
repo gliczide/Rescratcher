@@ -814,7 +814,6 @@ textarea.paint-editor_text-area_27Ci4, .paint-editor_canvas-container_x2D0a {
     right: 4rem;
     top: 10px; }
 .guiPlayer.fullscreen .stage-header_stage-menu-wrapper_15JJt.box_box_2jjDp {
-    margin-top: 0.4rem;
     border-top: 1px solid #ccc !important;
     border-right: 1px solid #ccc !important;
     border-bottom: 1px solid #d0d1d2 !important; }
@@ -1455,10 +1454,9 @@ span.button_outlined-button_1bS__:nth-child(2), .stage-header_stage-size-row_14N
 .box-header h1, .inplace-textarea, .not-available-outer .flex-row.inner, .studio-activity, #page-404 .box-content .box-header {
     background-color: #fff; }
 .stage-header_stage-header-wrapper-overlay_5vfJa.box_box_2jjDp .stage-header_stage-menu-wrapper_15JJt.box_box_2jjDp {
-    top: 3px;
+    top: 12px;
     box-sizing: content-box;
     height: 27px;
-    left: -1px;
     box-shadow: none; }
 .title-banner.masthead {
     margin-top: 20px;
