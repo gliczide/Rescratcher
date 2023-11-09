@@ -1,12 +1,8 @@
-![Preview](https://raw.githubusercontent.com/gliczide/Scratch-2.1/main/preview.png)
+![Preview](https://raw.githubusercontent.com/gliczide/Rescratcher/main/preview.png)
 
 ---
 
-### Version: 0.9.8
-
-[Installation:]
-
-https://github.com/infinitytec/I-Cant-Believe-Its-Not-2
+### Version: 0.9.9
 
 https://github.com/infinitytec/2.0-Colors
 
