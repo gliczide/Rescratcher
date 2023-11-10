@@ -3,7 +3,7 @@
 @namespace      https://github.com/gliczide/Rescratcher/
 @supportURL     https://github.com/gliczide/Rescratcher/pulls
 @updateURL      https://github.com/gliczide/Rescratcher/theme.user.css
-@version        1.0.0
+@version        1.0.1
 @license        Apache License 2.0
 @description    Reverts 3.0 pages into 2.0!
 @author         gliczide <gliczide@gmail.com> (https://txti.es/gliczide)
@@ -293,8 +293,6 @@ if homepage {
     position: fixed;
     top: 7px;
     margin-left: 6px; }
-.flex-row.action-buttons {
-    direction: rtl; }
 .carousel .slick-prev::before, .carousel .slick-next::before {
     background-image: unset;
     content: "‹";
@@ -348,8 +346,7 @@ if header {
     background-color: unset !important; }
 #navigation {
     background-color: #0f8bc0;
-    height: 35px;
-    box-shadow: 0 1px 1px #ccc; }
+    height: 35px; }
 #navigation a {
     top: -8px;
     position: relative; }
@@ -652,8 +649,6 @@ div.menu-bar_menu-bar-item_oLDa-:nth-child(5) {
     background-color: #f6f6f6;
     border: 1px solid #ddd;
     border-radius: 15px; }
-.paint-editor_zoom-controls_OC6Ks.input-group_input-group_plJaJ {
-    direction: ltr; }
 /* header & stuffs */
 .dropdown-menu.blue {
     background-color: #25aff4; }
@@ -668,7 +663,7 @@ html {
 h1, h2, h3, h4 {
     font-weight: 700;
     color: #554747; }
-.stage_green-flag-overlay_gNXnv img, .button_outlined-button_1bS__.stage-header_stage-button_hkl9B img, .turbo-mode_turbo-icon_fjr8U, .flex-row.project-header .avatar, .preview img.avatar.remix, .subactions .action-buttons .action-button.studio-button::before, .subactions .action-buttons .action-button.copy-link-button::before, .subactions .action-buttons .action-button.report-button::before, .comment .comment-body .comment-bubble::before, .comment-reply::after, .preview-row:nth-child(4), .button.remix-button, .creator-image, .comment .comment-top-row .comment-report::before, .comment .comment-top-row .comment-delete::before, .loader_block-animation_12MqO, .flex-row.remix-credit:nth-child(2), .stage-header_stage-size-toggle-group_17LtK, .grid .thumbnail.gallery .thumbnail-image::after, .studio-info .studio-info-footer-stats div img, .studio-empty, .studio-tab-nav .active > li img, .studio-tab-nav li img, .studio-info .studio-info-footer-report button img, .studio-project-tile .studio-project-avatar, .studio-member-role, .studio-projects .studio-header-container, .studio-compose-container .studio-header-container, .studio-activity .studio-header-container, .flex-row.comments-header .slider, .expand-thread::after, .studio-adder-section h3 span, .studio-adder-section .studio-adder-row .studio-adder-vertical-divider, .modal-content-close-img, .iframeshim, .modal-inner-content.studio-report-inner h3, .studio-report-tile-text-container, .studio-report-tile-image, .studio-report-modal .studio-report-title::after, .user-projects-modal .user-projects-modal-title:after, .addToStudio-modal-header.modal-header .modal-title::after, .studio-tile-dynamic-add, .studio-list-bottom-gradient, .studio-tile-dynamic-remove, .studio-thumb-edit-img, .gui_tab_27Unf img, .blocklyFlyoutLabel, .audio-trimmer_trim-line_2cpoE.audio-trimmer_left-handle_1Ure2.box_box_2jjDp, .audio-trimmer_trim-line_2cpoE.audio-trimmer_right-handle_jMGnD.box_box_2jjDp, .paint-editor_bitmap-button-icon_pfbtY, [dir="ltr"] .label_input-label_1s1ft, [dir="ltr"] .label_input-label-secondary_1wKlv, .sprite-selector-item_sprite-details_2UVpA, .gui_extension-button-container_b4rCs::before, .stage-selector_header-title_33xCt, .blocklyScrollbarVertical.blocklyFlyoutScrollbar, .report-modal-content .validation-message::before, .sprite-info_is-disabled_1_MCi, .user-avatar_user-thumbnail_jSYS1, .validation-message:before, .menu-bar_main-menu_3wjWH .menu-bar_menu-bar-item_oLDa-.menu-bar_hoverable_c6WFB img:nth-child(1), .action-menu_tooltip_3Bkh5::before, .action-menu_tooltip_3Bkh5::after, .labeled-icon-button_edit-field-title_1ZoEV, .divider_divider_1_Adi.library_filter-bar-item_99aoX.library_divider_2xD3D, .icon-button_title_36ChS, .sound-editor_button_1_6Li:focus::before, .toggle-buttons_button_1ZBU8:focus::before, .divider_divider_1_Adi {
+.stage_green-flag-overlay_gNXnv img, .button_outlined-button_1bS__.stage-header_stage-button_hkl9B img, .turbo-mode_turbo-icon_fjr8U, .flex-row.project-header .avatar, .preview img.avatar.remix, .subactions .action-buttons .action-button.studio-button::before, .subactions .action-buttons .action-button.copy-link-button::before, .subactions .action-buttons .action-button.report-button::before, .comment .comment-body .comment-bubble::before, .comment-reply::after, .preview-row:nth-child(4), .button.remix-button, .creator-image, .comment .comment-top-row .comment-report::before, .comment .comment-top-row .comment-delete::before, .loader_block-animation_12MqO, .flex-row.remix-credit:nth-child(2), .stage-header_stage-size-toggle-group_17LtK, .grid .thumbnail.gallery .thumbnail-image::after, .studio-info .studio-info-footer-stats div img, .studio-empty, .studio-tab-nav .active > li img, .studio-tab-nav li img, .studio-info .studio-info-footer-report button img, .studio-project-tile .studio-project-avatar, .studio-member-role, .studio-projects .studio-header-container, .studio-compose-container .studio-header-container, .studio-activity .studio-header-container, .flex-row.comments-header .slider, .expand-thread::after, .studio-adder-section h3 span, .studio-adder-section .studio-adder-row .studio-adder-vertical-divider, .modal-content-close-img, .iframeshim, .modal-inner-content.studio-report-inner h3, .studio-report-tile-text-container, .studio-report-tile-image, .studio-report-modal .studio-report-title::after, .user-projects-modal .user-projects-modal-title:after, .addToStudio-modal-header.modal-header .modal-title::after, .studio-tile-dynamic-add, .studio-list-bottom-gradient, .studio-tile-dynamic-remove, .studio-thumb-edit-img, .gui_tab_27Unf img, .blocklyFlyoutLabel, .audio-trimmer_trim-line_2cpoE.audio-trimmer_left-handle_1Ure2.box_box_2jjDp, .audio-trimmer_trim-line_2cpoE.audio-trimmer_right-handle_jMGnD.box_box_2jjDp, .paint-editor_bitmap-button-icon_pfbtY, [dir="ltr"] .label_input-label_1s1ft, [dir="ltr"] .label_input-label-secondary_1wKlv, .sprite-selector-item_sprite-details_2UVpA, .gui_extension-button-container_b4rCs::before, .stage-selector_header-title_33xCt, .blocklyScrollbarVertical.blocklyFlyoutScrollbar, .report-modal-content .validation-message::before, .sprite-info_is-disabled_1_MCi, .user-avatar_user-thumbnail_jSYS1, .validation-message:before, .menu-bar_main-menu_3wjWH .menu-bar_menu-bar-item_oLDa-.menu-bar_hoverable_c6WFB img:nth-child(1), .action-menu_tooltip_3Bkh5::before, .action-menu_tooltip_3Bkh5::after, .labeled-icon-button_edit-field-title_1ZoEV, .divider_divider_1_Adi.library_filter-bar-item_99aoX.library_divider_2xD3D, .icon-button_title_36ChS, .sound-editor_button_1_6Li:focus::before, .toggle-buttons_button_1ZBU8:focus::before, .divider_divider_1_Adi, .menu-bar_remix-button-icon_2E93U {
     display: none; }
 a:hover, a:active {
     color: #1aa0d8;
@@ -687,8 +682,6 @@ a:hover, a:active {
 #footer .lists dd {
     margin-top: -1px;
     margin-bottom: 2px; }
-textarea.paint-editor_text-area_27Ci4, .paint-editor_canvas-container_x2D0a {
-    direction: ltr; }
 /* loading */
 .loader_background_2DPrW.loader_fullscreen_29EhP {
     position: absolute;
@@ -1087,8 +1080,6 @@ button.button.action-button.report-button {
     padding-left: 24px;
     padding-right: 20px;
     font-size: 13px; }
-.controls_controls-container_2xinB {
-    direction: ltr; }
 .flex-row.stats.noselect {
     flex-direction: row-reverse; }
 .subactions .action-buttons .action-button {
@@ -1950,8 +1941,6 @@ div .instructions {
 .report-modal-content {
     margin: .8rem 0 !important;
     padding-left: .8rem; }
-.action-buttons-overflow-fix {
-    direction: ltr; }
 .social-label-item {
     font-size: 14px; }
 /* add to studios */
@@ -2269,7 +2258,6 @@ img.tool-select-base_tool-select-icon_tJ-rr {
     width: 20px;
     height: 20px; }
 .paint-editor_canvas-controls_16wq3 {
-    direction: ltr;
     border: 0;
     align-content: flex-end;
     flex-wrap: wrap;
@@ -2446,6 +2434,7 @@ img.tool-select-base_tool-select-icon_tJ-rr {
     right: 150px; }
 .button_outlined-button_1bS__.menu-bar_menu-bar-button_3IDN0.community-button_community-button_2Lo_g {
     background-color: #169fdb;
+    box-shadow: unset;
     padding: 0 8px; }
 .community-button_community-button-icon_1IFvv.button_icon_77d8G {
     background-image: url("https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/images/stats-icons-dark.png") !important;
@@ -2461,7 +2450,7 @@ img.tool-select-base_tool-select-icon_tJ-rr {
     top: 40px;
     left: 50px; }
 .author-info_project-title_h7Gcj, .author-info_username_2Ov2- {
-    font-weight: 1; }
+    font-weight: 500; }
 .author-info_project-title_h7Gcj {
     font-size: 16px;
     margin-bottom: 1px; }
@@ -2475,9 +2464,9 @@ img.tool-select-base_tool-select-icon_tJ-rr {
     width: 0; }
 .target-pane_target-pane_3S5E6 {
     margin: 0 0px 0 -4px; }
-.gui_body-wrapper_-N0sA.box_box_2jjDp {
+.flex-row.action-buttons, .gui_body-wrapper_-N0sA.box_box_2jjDp {
     direction: rtl; }
-.sprite-info_sprite-info_3EyZh.box_box_2jjDp, .sprite-selector_scroll-wrapper_3NNnc.box_box_2jjDp, .gui_tabs_AgmuP {
+.sprite-info_sprite-info_3EyZh.box_box_2jjDp, .sprite-selector_scroll-wrapper_3NNnc.box_box_2jjDp, .gui_tabs_AgmuP, .backpack_backpack-list_MOp5X, .action-buttons-overflow-fix, .controls_controls-container_2xinB, textarea.paint-editor_text-area_27Ci4, .paint-editor_canvas-container_x2D0a, .paint-editor_zoom-controls_OC6Ks.input-group_input-group_plJaJ, .paint-editor_canvas-controls_16wq3  {
     direction: ltr; } 
 .sprite-selector_scroll-wrapper_3NNnc.box_box_2jjDp {
     background-color: #fff; }   
@@ -2502,7 +2491,7 @@ img.tool-select-base_tool-select-icon_tJ-rr {
     background-image: linear-gradient(0deg, #e6e8e8, #fff);
     color: #666; }
 .react-tabs_react-tabs__tab-list_17Wee.gui_tab-list_87TYM li[aria-selected="false"] {
-    background-image: linear-gradient(0deg, #e6e8e8 0%, #f2f2f2 35%);
+    background-image: linear-gradient(0deg, #d9dada 0%, #f2f2f2 15%);
     color: #888; }
 .sprite-selector-item_sprite-selector-item_kQm-i {
     border: unset; }
@@ -2552,7 +2541,7 @@ img.delete-button_delete-icon_3b8wH {
 .menu-bar_menu-bar_JcuHF {
     background-color: #9d9fa3; }
 .menu-bar_remix-button_2LQQc {
-    left: -90px; }
+    left: -60px; }
 button.toggle-buttons_button_1ZBU8 {
     border: 1px solid #dcdedf;
     background-image: linear-gradient(-180deg, #fff, #e7e8e9);
@@ -2589,8 +2578,11 @@ button.toggle-buttons_button_1ZBU8:hover, .toggle-buttons_button_1ZBU8[aria-pres
     margin-left: -3px !important;
     border: unset !important; }
 .menu-bar_file-group_1_CHX .menu-bar_menu-bar-item_oLDa-:first-child {
-    margin: 0 1px 0 10px;
+    margin: 0 5px 0 10px;
     padding: 0; }
+.menu-bar_file-group_1_CHX .menu-bar_menu-bar-item_oLDa-, .menu-bar_account-info-group_MeJZP .menu-bar_menu-bar-item_oLDa- {
+    margin: 0;
+    padding: 0 0.64em; }
 #logo_img {
     background-image: url("https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/images/logo_sm.png");
     display: block;
@@ -2701,6 +2693,8 @@ input.input_input-form_l9eYg.project-title-input_title-field_en5Gd.menu-bar_titl
     border-right-style: solid !important; }
 .paint-editor_editor-container-top_2wxS3 {
     border-bottom-style: solid !important; }
+.menu-bar_remix-button_2LQQc {
+    background-color: #f6a843; }
 /* library */
 .ReactModal__Overlay.ReactModal__Overlay--after-open.modal_modal-overlay_1Lcbx {
     border: 2em solid transparent;
@@ -2749,7 +2743,7 @@ input.input_input-form_l9eYg.project-title-input_title-field_en5Gd.menu-bar_titl
 .library_library-scroll-grid_1jyXm.library_withFilterBar_26Opm {
     margin: 0 1em 0 14em;
     height: calc(100% - 8%);
-    border-radius: 0;
+    border-radius: 10px;
     background-color: #fff; }
 img.filter_filter-icon_3Pfaw {
     background-image: url("https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/images/nav-search-glass.png");
@@ -2793,4 +2787,6 @@ input.filter_filter-input_1iiEt.library_filter-input_6w2X2 {
     max-width: 140px;
     height: 140px;
     padding-top: 8px;
-    font-size: 12px; } }
+    font-size: 12px; }
+.react-contextmenu-wrapper.backpack_backpack-item_hwqzQ.sprite-selector-item_sprite-selector-item_kQm-i img {
+    transform: none; } }
