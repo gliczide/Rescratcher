@@ -2,7 +2,7 @@
 
 ---
 
-### Version: 0.9.9
+### Version: 1.0.1
 
 https://github.com/infinitytec/2.0-Colors
 
