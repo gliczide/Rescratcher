@@ -17,4 +17,4 @@ https://github.com/infinitytec/2.0-Colors
 [YouTube](https://youtube.com) - Findings
 
 # License:
-[Unlicense](https://raw.githubusercontent.com/gliczide/Scratch-2.1/705bf71be280658df560815bdd4d85394afa0af8/LICENSE)
+[Unlicense](https://raw.githubusercontent.com/gliczide/Rescratcher/705bf71be280658df560815bdd4d85394afa0af8/LICENSE)
