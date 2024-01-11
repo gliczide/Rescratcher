@@ -3,17 +3,17 @@
 @namespace      https://github.com/gliczide/Rescratcher/
 @supportURL     https://github.com/gliczide/Rescratcher/pulls
 @updateURL      https://github.com/gliczide/Rescratcher/theme.user.css
-@version        1.0.1
-@license        Apache License 2.0
+@version        1.0.2
+@license        Unlicense
 @description    Reverts 3.0 pages into 2.0!
-@author         gliczide <gliczide@gmail.com> (https://txti.es/gliczide)
+@author         gliczide <gliczide@gmail.com> (https://gliczide.neocities.org)
 @preprocessor   stylus
 
 @var checkbox purple 'Purplized' 1
 @var checkbox header 'Header (2013-early 2016)' 1
 @var checkbox homepage 'Homepage (2013)' 0
 @var checkbox logo 'Padding logo header (2013)' 0
-@var checkbox avatar 'Padding avatar in studio comments (2013)' 0
+@var checkbox avatar 'Padding Avatar in Comments (2013)' 1
 @var checkbox studio 'Big title Project+Studio size (2014-2018)' 1
 @var checkbox texts 'Texts Before (English Only)' 0
 @var checkbox improved 'Bit improved buttons in studio (Curators Only)' 1
@@ -23,18 +23,22 @@
 ==/UserStyle== */
 @-moz-document domain("scratch.mit.edu") {
 /* purple */
-if purple {
+if purple {  
+.link.right.login-item .dropdown.with-arrow.open, .link.right.login-item .dropdown.with-arrow.open::before, .studio-status-icon-spinner.spinner, #topnav ul.account-nav .sign-in .popover, .title-banner.mod-messages, .outer .title-banner.masthead {
+    background-color: #855cd6 !important;
+    border-color: #855cd6 !important; }
 #navigation, .dropdown-menu.blue, .dropdown.production.open, #topnav .innerwrap, #topnav ul.account-nav .logged-in-user .dropdown-menu, #topnav li.logout.divider input {
     background-color: #855cd6 !important; }
-#navigation li a, #topnav ul.site-nav li, #topnav ul.account-nav.logged-in>li, #topnav ul.site-nav li, #topnav ul.site-nav li.last, #topnav ul.account-nav.logged-in>li, #topnav ul.account-nav ul.user-nav li.logout.divider {
+#topnav ul.account-nav .sign-in .popover .arrow, #topnav ul.account-nav .sign-in .popover .arrow::after {
+    border-bottom-color: #855cd6 !important; }
+#navigation li a, #topnav ul.site-nav li, #topnav ul.account-nav.logged-in>li, #topnav ul.site-nav li, #topnav ul.site-nav li.last, #topnav ul.account-nav.logged-in>li, #topnav ul.account-nav ul.user-nav li.logout.divider, #topnav ul.account-nav > li.join-scratch, #topnav ul.account-nav > li {
     border-color: #9d79e3 !important; }
-#footer a, .box a:not(#comments .control-group a, #comments .info .name a, #tabs a, .buttons a), a:visited, .comment-content a, .flex-row.project-notes a, .flex-row a:link, .news li h4, .box-header a, .instructions a, .comment-reply, .uneditable.studio-description a, .social-label-item a, .comment-reply span, .uneditable.studio-description a, .social-label-item a, .comment .comment-top-row .username:hover {
+#footer a, .box a:not(.button.small.grey, #comments .control-group a, #comments .info .name a, #tabs a, .buttons a, .grey), .comment-content a, .flex-row.project-notes a, .flex-row a:link, .news li h4, .box-header a, .instructions a, .comment-reply, .uneditable.studio-description a, .social-label-item a, .comment-reply span, .comment .comment-top-row .username:hover, #donor #donor-text a, .carousel .slick-next::before, #comments .comment .info .name a:hover, #comments .more-replies .pulldown, .empty a, #donor-text a {
     color: #855cd6 !important; }
 a.ignore-react-onclickoutside.user-info, .dropdown.production.open a, #topnav ul.account-nav ul.user-nav li a {
     color: #fff !important; }
 #navigation .link > a:hover, .ignore-react-onclickoutside.user-info:hover, .ignore-react-onclickoutside.user-info.open, .dropdown.production.open a:hover, .overflow-menu-container .overflow-menu-dropdown li button:hover, #topnav ul.site-nav li:hover, #topnav ul.account-nav.logged-in>li:hover, #topnav ul.account-nav .logged-in-user.dropdown.open, #topnav ul.account-nav.logged-in li:hover, #topnav li.logout.divider input:hover {
     background-color: #7854c0 !important; }
-/* stylus css important override */
 #frc-compose-comment-3392903:focus, #frc-notes-3392903:focus {
     box-shadow: 0 0 0 2px #945cd6 !important;
     border-color: #9052eccc !important; }
@@ -54,7 +58,25 @@ a.ignore-react-onclickoutside.user-info, .dropdown.production.open a, #topnav ul
     background-image: linear-gradient(180deg, #9766d5, #895fc0) !important; }
 .button.see-inside-button:hover {
     background-image: linear-gradient(180deg, #895fc0, #895fc0) !important; }
-#navigation .link > a { color: #fff !important; } }
+.button:not(.action-button, .grey, .compose-cancel,  .button.button) {
+    background-image: linear-gradient(180deg,#855cd6,#855cd6) !important;
+    border-color: #855cd6 !important; }
+#topnav ul.account-nav > li.sign-in:hover, #topnav ul.account-nav > li.sign-in.open, .outer .categories li.active:hover  {
+    background-color: #7854c0 !important; }
+.outer .categories li.active {
+    background-color: #855cd6 !important; 
+    color: #fff !important; }
+.outer .categories li:hover, .outer .categories li.active:hover {
+    background-color: rgba(133,92,214,.25) !important; }
+.outer .categories li {
+    border-width: 1px !important;
+    background-color: #fff !important;
+    color: #855cd6 !important;
+    font-weight: 800 !important; }
+#navigation .link > a, #topnav ul.site-nav a { 
+    color: #fff !important; } 
+.flex-row.comment-top-row .username {
+    color: #333 !important; } }
 /*2013 padding logo*/
 if logo {
 #navigation .logo {
@@ -82,7 +104,7 @@ if studio {
     margin-right: 0; } }
 /*2013 avatar padding studio*/
 if avatar {
-.studio-compose-container .flex-row.comment-container .avatar {
+.flex-row.comment-container .avatar {
     padding-right: 2px; } }
 /*texts before*/
 if texts { 
@@ -261,7 +283,7 @@ if homepage {
     padding: 6px 20px;
     height: 22px; }
 .thumbnail .thumbnail-loves::before, .thumbnail .thumbnail-remixes::before {
-    background-image: url(http://cdn.scratch.mit.edu/scratchr2/static/__1385142220__/images/icons_xs.d77c1366cd05.png);
+    background-image: url(http://web.archive.org/web/20131203075747id_/http://cdn.scratch.mit.edu/scratchr2/static/__1385142220__/images/icons_xs.d77c1366cd05.png);
     background-position: -7px -58px;
     background-size: 2.06rem;
     position: relative;
@@ -362,9 +384,9 @@ if header {
     line-height: 25px;
     font-size: 15px; }
 #navigation .inner > ul > li.search .btn-search {
-    background-image: url(https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/images/nav-search-glass.png);
+    background-image: url(https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/images/nav-search-glass.png) !important;
     padding: 0;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #ccc !important;
     height: 21px !important;
     opacity: .8;
     z-index: 1;
@@ -420,7 +442,7 @@ li.search {
     margin-top: 3px;
     margin-left: 4px; }
 .message-count.show {
-    padding: 0 5px 2px 6px !important;
+    padding: 0 5px 2px 5px !important;
     font-size: 10px !important;
     line-height: 13px !important;
     margin-right: -4px;
@@ -554,9 +576,6 @@ div.login label[for="password"] {
     margin-top: -22px; }
 .dropdown.with-arrow.open {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
-button.white {
-    padding: 6px 8px 6px 8px !important;
-    margin: -13px 0 10px 3px !important; }
 .registrationLink {
     margin-left: -1px;
     width: 87px; }
@@ -587,17 +606,23 @@ a[href="/accounts/password_reset/"]:hover {
     margin-top: 35px; } }
 /* fix home & 2.0 pages */
 /* you know what? screw you. *unpurplized your header* */
-#topnav .innerwrap, #topnav ul.account-nav .logged-in-user .dropdown-menu, #topnav li.logout.divider input {
+#topnav .innerwrap, #topnav ul.account-nav .logged-in-user .dropdown-menu, #topnav li.logout.divider input, #topnav ul.account-nav .sign-in .popover {
     background-color: #0f8bc0; }
-#topnav ul.site-nav li, #topnav ul.site-nav li.last, #topnav ul.account-nav.logged-in>li, #topnav ul.account-nav ul.user-nav li.logout.divider {
+#topnav ul.site-nav li, #topnav ul.site-nav li.last, #topnav ul.account-nav.logged-in>li, #topnav ul.account-nav ul.user-nav li.logout.divider, #topnav ul.account-nav .sign-in .popover, #topnav ul.account-nav > li.join-scratch, #topnav ul.account-nav > li {
     border-color: #149acb; }
 #topnav ul.site-nav li:hover, #topnav ul.account-nav.logged-in>li:hover {
     background-color: #0c6185; }
-/* can't fix this due to stylus css important override */
+#topnav ul.account-nav .sign-in .popover .arrow {
+    border-bottom-color: #149acb; }
+#topnav ul.account-nav .sign-in .popover .arrow::after {
+    border-bottom-color: #0f8bc0; }
 #topnav ul.account-nav .logged-in-user.dropdown.open {
     background-color: #0c6185 !important; } 
-#topnav ul.account-nav.logged-in li:hover, #topnav li.logout.divider input:hover {
+#topnav ul.account-nav.logged-in li:hover, #topnav li.logout.divider input:hover, #topnav ul.account-nav > li.sign-in:hover, #topnav ul.account-nav > li.sign-in.open {
     background-color: #0d7dad; }
+.button:not(.action-button, .grey, .compose-cancel, .button.button), .button.small[data-control="post"] {
+    background-image: linear-gradient(180deg, #30aadf, #169fdb);
+    border-color: #1798c4 #1798c4 #1487ad; }
 li#logout input {
     cursor: pointer; }
 li.reply {
@@ -610,7 +635,7 @@ li.reply {
     text-decoration: none; }
 #footer .container {
     padding-top: 20px; }
-#frc-language-1088, .select select {
+#frc-language-1088 {
     all: revert !important; }
 #shared, #featured, #favorites {
     padding-top: 10px; }
@@ -885,8 +910,6 @@ a:hover, a:active {
     margin-top: 17px; }
 .flex-row.comment.highlighted-comment {
     margin: 18px 17px 0 0; }
-.flex-row.comments-list {
-    padding-top: 20px; }
 .comment.highlighted-comment::before, [dir="ltr"] .asset-panel_wrapper_366X0 {
     border-radius: 0; }
 .comment-content a {
@@ -1201,7 +1224,7 @@ button.button.action-button.copy-link-button {
     display: block; }
 .button.compose-post {
     border-radius: 3.5px !important;
-    padding: 4px 10px;
+    padding: 4px 10.7px;
     background-image: linear-gradient(180deg, #30aadf, #169fdb);
     font-weight: normal;
     border: 1px solid;
@@ -1242,7 +1265,7 @@ button.button.action-button.copy-link-button {
     width: 99%; }
 .flex-row.comments-root-reply {
     padding: 0 10px 0 21px;
-    margin: -3px 0 -2.5rem 0; }
+    margin: -3px 0 0 0; }
 .comment-time {
     margin-top: -11px; }
 .replies.collapsed > .comment:last-of-type::before {
@@ -1308,7 +1331,6 @@ button.button.action-button.copy-link-button {
     width: 90%; }
 .flex-row.comment-container {
     border-bottom: 1px solid #ccc;
-    top: 0.81rem;
     margin-top: 1rem;
     padding-left: 20px; }
 .flex-row.comment-container:last-child {
@@ -1474,7 +1496,7 @@ span.button_outlined-button_1bS__:nth-child(2), .stage-header_stage-size-row_14N
 .button.compose-cancel {
     margin-left: -2px !important; }
 li.highlighted {
-    width: 100%; }
+    width: 189%; }
 /* studio search */
 .title-banner-h1 span {
     font-weight: bolder !important; }
@@ -1540,7 +1562,7 @@ li.highlighted {
     font-size: 14px; }
 .studio-info .studio-info-footer-stats div:last-child {
     position: relative;
-    top: -2.6rem;
+    top: -2.5rem;
     font-size: 11px;
     left: 50.4rem;
     color: #666;
@@ -1887,13 +1909,7 @@ li.highlighted {
 .social-form.social-input {
     height: 34px; }
 .flex-row.action-buttons.action-buttons-no-inset {
-    margin-left: -10px;
-    margin-top: 40px; }
-.flex-row.action-buttons.action-buttons-no-inset .button.action-button.submit-button {
-    width: 50px;
-    padding-left: 10px !important;
-    padding-top: 3px !important;
-    height: 30px; }
+    margin-left: -10px; }
 .modal-title::after, .report-content-label span::after {
     content: "?"; }
 .action-buttons-overflow-fix {
@@ -1907,16 +1923,12 @@ div .instructions {
     margin-bottom: -10px; }
 .action-buttons-overflow-fix .button.action-button.submit-button {
     margin-left: 7px;
-    height: 32px;
-    padding-top: 3px !important; }
+    height: 32px; }
 .action-buttons {
     justify-content: flex-start !important;
     direction: ltr !important; }
 .flex-row.action-buttons .action-buttons-overflow-fix {
     height: 15px; }
-.button.action-button.submit-button.disabled {
-    width: 51px !important;
-    height: 30px; }
 .studio-report-tile-container {
     display: block !important; }
 .studio-report-tile, .studio-report-tile-header {
@@ -1947,13 +1959,9 @@ div .instructions {
 .studio-list-outer-scrollbox {
     width: 98%; }
 .add-to-studio .button.action-button.close-button.white, .button.action-button.submit-button {
-    width: 59px;
     padding-top: 3px !important;
     height: 31px;
     padding-left: 12px !important; }
-.button.action-button.submit-button {
-    margin-top: -13px;
-    padding-left: 14px !important; }
 .modal-inner-content.user-projects-modal-content, .studio-list-outer-scrollbox {
     background-color: #fff;
     padding: 0; }
@@ -2023,7 +2031,8 @@ div .instructions {
     background-color: #277231; }
 .add-to-studio .action-buttons {
     float: left;
-    margin-left: -3px !important; }
+    margin-left: -9px !important;
+    margin-bottom: 24px; }
 .modal-content.user-projects-modal {
     height: 560px; }
 /* crash */
@@ -2789,4 +2798,18 @@ input.filter_filter-input_1iiEt.library_filter-input_6w2X2 {
     padding-top: 8px;
     font-size: 12px; }
 .react-contextmenu-wrapper.backpack_backpack-item_hwqzQ.sprite-selector-item_sprite-selector-item_kQm-i img {
-    transform: none; } }
+    transform: none; }
+/* explore page */
+.outer .categories li.active {
+    background-color: #26d9bb; }
+.outer .categories li:hover, .outer .categories li.active:hover {
+    background-color: rgba(0,0,0,.2); }
+.outer .categories li:active {
+    box-shadow: inset 0 0 5px rgba(0,0,0,.25); }
+.outer .categories li {
+    background-color: rgba(0,0,0,.1);
+    border-width: 0;
+    color: #fff;
+    font-weight: 500; }
+.empty a, #donor-text a {
+    color: #1aa0d8 !important; } }
