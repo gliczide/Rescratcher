@@ -4,7 +4,7 @@
 @supportURL     https://github.com/gliczide/Rescratcher/pulls
 @updateURL      https://github.com/gliczide/Rescratcher/theme.user.css
 @version        1.0.2
-@license        Unlicense
+@license        Apache License 2.0
 @description    Reverts 3.0 pages into 2.0!
 @author         gliczide <gliczide@gmail.com> (https://gliczide.neocities.org)
 @preprocessor   stylus
@@ -39,6 +39,7 @@ a.ignore-react-onclickoutside.user-info, .dropdown.production.open a, #topnav ul
     color: #fff !important; }
 #navigation .link > a:hover, .ignore-react-onclickoutside.user-info:hover, .ignore-react-onclickoutside.user-info.open, .dropdown.production.open a:hover, .overflow-menu-container .overflow-menu-dropdown li button:hover, #topnav ul.site-nav li:hover, #topnav ul.account-nav.logged-in>li:hover, #topnav ul.account-nav .logged-in-user.dropdown.open, #topnav ul.account-nav.logged-in li:hover, #topnav li.logout.divider input:hover {
     background-color: #7854c0 !important; }
+/* stylus css important override */
 #frc-compose-comment-3392903:focus, #frc-notes-3392903:focus {
     box-shadow: 0 0 0 2px #945cd6 !important;
     border-color: #9052eccc !important; }
@@ -162,7 +163,7 @@ if features {
     top: 5px; } }
 /*alpha 2.0 design*/
 if early {
-a.username, .flex-row .title a, .flex-row a, .comment-reply a, #footer a, a:visited, .comment-reply, .news li h4 {
+a.username, .flex-row .title a, .flex-row a, .comment-reply a, #footer a, .comment-reply span, .comment-reply, .news li h4 {
     color: #446BD1 !important; }
 .flex-row.project-header {
     padding-left: 5px;
@@ -205,7 +206,7 @@ a.username, .flex-row .title a, .flex-row a, .comment-reply a, #footer a, a:visi
     width: 128px !important; }
 .share-date {
     top: -428px !important;
-    left: 47% !important;
+    left: 48% !important;
     border-bottom: 1px solid #E3E3E3;
     padding-left: 5px;
     width: 419px;
@@ -616,6 +617,7 @@ a[href="/accounts/password_reset/"]:hover {
     border-bottom-color: #149acb; }
 #topnav ul.account-nav .sign-in .popover .arrow::after {
     border-bottom-color: #0f8bc0; }
+/* can't fix this due to stylus css important override */
 #topnav ul.account-nav .logged-in-user.dropdown.open {
     background-color: #0c6185 !important; } 
 #topnav ul.account-nav.logged-in li:hover, #topnav li.logout.divider input:hover, #topnav ul.account-nav > li.sign-in:hover, #topnav ul.account-nav > li.sign-in.open {
